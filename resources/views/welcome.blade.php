@@ -1,18 +1,14 @@
 
 @php
     $var = 'suleman';
-    $arr = ['hi','hey','hello'];
+    $arr = ['one'=> 'hi','two'=> 'hey','three'=> 'hello'];
 
 @endphp
 
+@include('pages.header',['name' => 'Suleman Anwar'])
+
 {!! "<h1> $var </h1>" !!}
 
-@foreach ($arr as $a)
-@if ($loop->first)
-<li style="color: blue">{{$a}}</li>
-@elseif ($loop->iteration==3)
-<li style="color: red">{{$a}}</li>
-@else
-<li style="color: black">{{$a}}</li>
-@endif
-@endforeach
+
+
+@include('pages.footer',['arr' => $arr])
