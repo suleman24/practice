@@ -1,0 +1,6 @@
+@extends('layout.masterlayout')
+
+@section('content')
+<h2>About</h2>
+<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque repudiandae tempora illum sed mollitia enim quibusdam, cum dolorem maxime nesciunt quos, quas voluptatem blanditiis magni voluptatum. Quam quae doloribus distinctio nisi fugiat tempore nostrum expedita ad enim ea reprehenderit ratione officiis aperiam assumenda dolore natus sequi, tempora inventore vero est eum non optio molestias architecto! Natus, molestias minima modi reprehenderit sed a? Earum aperiam a, beatae ipsam nam praesentium assumenda exercitationem facere explicabo, hic fugiat tempore eum animi voluptatem dignissimos consequuntur necessitatibus. Sequi aperiam mollitia sunt earum laborum, soluta, error laboriosam placeat quo, deserunt dignissimos cumque officia! At quasi beatae ut magni assumenda exercitationem temporibus corrupti molestias sint architecto facilis, minima vero! Consequuntur cumque at veritatis nobis doloribus quas sunt aperiam consequatur, libero atque est officia aspernatur pariatur. Eligendi blanditiis excepturi, nobis error atque ut, accusantium, labore quas sint culpa a voluptatem totam similique doloremque minima omnis dolor. Veniam, assumenda?</p>
+@endsection
