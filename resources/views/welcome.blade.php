@@ -1,7 +1,7 @@
 
 @php
     $var = 'suleman';
-    $arr = ['one'=> 'hi','two'=> 'hey','three'=> 'hello'];
+    $arr = [];
 
 @endphp
 
@@ -12,3 +12,4 @@
 
 
 @include('pages.footer',['arr' => $arr])
+

@@ -1,10 +1,8 @@
 <h1>Footer</h1>
-@foreach ($arr as $a => $value)
-@if ($loop->first)
-<li style="color: blue">{{$a}} - {{$value}}</li>
-@elseif ($loop->iteration==3)
-<li style="color: red">{{$a}} - {{$value}}</li>
-@else
-<li style="color: black">{{$a}} - {{$value}}</li>
-@endif
-@endforeach
+@forelse ($arr as $a => $value)
+    
+<li>{{$a}} - {{$value}}</li>
+
+@empty
+  <li>No Data</li>  
+@endforelse 
