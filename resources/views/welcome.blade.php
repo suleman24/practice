@@ -7,3 +7,8 @@
 @section('title')
 Home
 @endsection
+
+@section('navbar')
+    @parent
+    <p>Appended</p>
+@endsection

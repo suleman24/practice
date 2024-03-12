@@ -8,12 +8,14 @@
 </head>
 <body>
     <h1>Header</h1>
+    @section('navbar')
     <nav>
         <a href="/">Home</a>
         <a href="/post">Post</a>
         <a href="/about">About</a>
 
     </nav>
+    @show
     @hasSection('content')
         @yield('content')
     @else
