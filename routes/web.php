@@ -22,7 +22,7 @@ Route::get('/about', function () {
 
 Route::get('/post', function () {
     $name = 'Bilal';
-    $age = 19;
+    $age = '';
     return view('post')
     ->with('name',$name)
     ->with('age',$age);

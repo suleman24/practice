@@ -2,7 +2,7 @@
 
 @section('content')
 {{$name}}
-{{$age}}
+{{!empty($age)? $age: 'No age'}}
 @endsection
 
 @section('title')
