@@ -21,6 +21,7 @@ Route::get('/about', function () {
 });
 
 Route::get('/post', function () {
-    return view('post');
+    $name = 'Bilal';
+    return view('post',['name'=>$name]);
 });
 
