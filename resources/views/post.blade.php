@@ -2,6 +2,7 @@
 
 @section('content')
 {{$name}}
+{{$age}}
 @endsection
 
 @section('title')

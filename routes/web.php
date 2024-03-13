@@ -22,6 +22,9 @@ Route::get('/about', function () {
 
 Route::get('/post', function () {
     $name = 'Bilal';
-    return view('post',['name'=>$name]);
+    $age = 19;
+    return view('post')
+    ->with('name',$name)
+    ->with('age',$age);
 });
 
