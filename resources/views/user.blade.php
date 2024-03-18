@@ -1,9 +1,6 @@
-@extends('layout.masterlayout')
 
-@section('content')
 
-<h4>{{$user['name']}}</h4>
-<h4>{{$user['age']}}</h4>
-<h4>{{$user['city']}}</h4>
+@foreach ($user as $id => $u)
+        <h4 style="color: black">{{ $u->name }}</h4>
 
-@endsection
+    @endforeach

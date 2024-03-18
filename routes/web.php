@@ -1,6 +1,8 @@
 <?php
 
+use App\Http\Controllers\UserController;
 use Illuminate\Support\Facades\Route;
+
 
 function getUsers(){
     return $users = [1=>['name'=>'Ali','age'=>'19','city'=>'NewYork'],
@@ -10,9 +12,9 @@ function getUsers(){
 
 }
 
-Route::get('/', function () {
-    return view('welcome');
-});
+// Route::get('/', function () {
+//     return view('welcome');
+// });
 Route::get('/about', function () {
     return view('about');
 });
@@ -23,17 +25,17 @@ Route::get('/post', function () {
 
 Route::get('/users', function () {
 
-    $users = getUsers();
-    return view('users')
-    ->with('users',$users);
+    return view('users');
 });
 
 
-Route::get('/user/{id}', function ($id) {
-    $users = getUsers();
-    abort_if(!isset($users[$id]),404);
-    $user = $users[$id];
-    return view('user',['user'=>$user]);
-})->name('view.user');
+// Route::get('/user/{id}', function ($id) {
+//     $users = getUsers();
+//     abort_if(!isset($users[$id]),404);
+//     $user = $users[$id];
+//     return view('user');
+// })->name('view.user');
 
 
+Route::get('users', [UserController::class,'show']);
+Route::get('/user/{id}', [UserController::class,'singleusershow'])->name('view.user');
